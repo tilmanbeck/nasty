@@ -125,7 +125,7 @@ class SearchRetrieverBatch(RetrieverBatch):
                 pass
             elif entry["entryId"].startswith("sq-cursor-"):
                 pass
-            elif entry["entryId"] == "novel_coronavirus_message":
+            elif entry["entryId"] in ["novel_coronavirus_message", "novel_coronavirus_msg"]:
                 pass
             else:
                 raise RuntimeError(

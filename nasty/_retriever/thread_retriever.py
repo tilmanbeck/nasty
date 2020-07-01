@@ -138,7 +138,7 @@ class ThreadRetrieverBatch(ConversationRetrieverBatch):
                 "entryId"
             ].endswith("-show_more_cursor"):
                 pass
-            elif entry["entryId"] == "novel_coronavirus_message":
+            elif entry["entryId"] in ["novel_coronavirus_message", ""novel_coronavirus_msg""]:
                 pass
             else:
                 raise RuntimeError(
